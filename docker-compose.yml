@@ -8,7 +8,8 @@ services:
     expose:
       - 80
     volumes:
-      - ./src:/var/www/php/drupalville
+      - ./src:/opt/drupalville
+    build: .
   db:
     image: mysql:5.7
     restart: always
